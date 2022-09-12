@@ -1,6 +1,8 @@
 #home {
     background-image: url("img/black-and-white-bull-elk-eric-albright.webp");
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     height: 100vh;
     width: 100vw;
 }
@@ -44,4 +46,26 @@
 
 .button>a:hover{
     background-color: rosybrown;
+}
+
+#about{
+    background-color: lightgrey;
+    height: 1082px;
+    width: 100vw;
+    font-family: 'Inconsolata', monospace;
+}
+
+.headshot{
+    box-sizing: border-box;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+
+.introduction>h4>span{
+    border-bottom: 2px gray solid;
+}
+
+nav{
+    /*animation: ;*/
 }
