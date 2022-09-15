@@ -49,7 +49,7 @@
 }
 
 #about{
-    background-color: lightgrey;
+    background-color: whitesmoke;
     height: 1082px;
     width: 100vw;
     font-family: 'Inconsolata', monospace;
@@ -63,9 +63,14 @@
 }
 
 .introduction>h4>span{
-    border-bottom: 2px gray solid;
+    border-bottom: 2px #FE8802 solid;
 }
 
-nav{
-    /*animation: ;*/
+.card{
+    background-color: whitesmoke;
+    border: none;
+}
+
+.card-title>span{
+    border-bottom: 2px #FE8802 solid;
 }
