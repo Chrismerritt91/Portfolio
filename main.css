@@ -78,3 +78,20 @@ body{
 .card-title>span{
     border-bottom: 2px #FE8802 solid;
 }
+
+.aboutP{
+    font-size: 14px;
+}
+
+.resume-link{
+    border: 1px solid darkolivegreen;
+    background-color: darkolivegreen;
+    color: whitesmoke;
+    text-decoration: none;
+    transition: color, background-color;
+}
+
+.resume-link:hover{
+    color: black;
+    background-color: #FE8802;
+}
