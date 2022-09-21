@@ -1,5 +1,6 @@
 body{
     background-color: whitesmoke;
+    font-family: 'Inconsolata', monospace;
 }
 
 #home {
@@ -65,9 +66,8 @@ body{
 }
 
 .headshot{
-    box-sizing: border-box;
-    height: 275px;
-    width: 300px;
+    height: 100%;
+    width: 100%;
     border-radius: 50%;
 }
 
@@ -106,7 +106,38 @@ body{
 }
 
 #development{
-    height: 1028px;
     width: 100vw;
-    background-color: gray;
+    background-color: lightgrey;
+}
+
+.project-title{
+    color: #FE8802;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.dev-image{
+    border: 1px solid black;
+}
+
+#contact{
+    background-image: url("img/pexels-computer-2.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+}
+
+.ghost{
+    height: 45px;
+    width: 100vw;
+}
+
+.emailButton{
+    color: darkolivegreen;
+    border: 2px solid darkolivegreen;
+}
+
+.fa-brands{
+    color: gray;
 }
