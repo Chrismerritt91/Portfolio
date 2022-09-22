@@ -17,12 +17,12 @@ sendgrid.setApiKey(process.env.SENDGRID_API_KEY);
 // construct an email
 
 // send the email via sendgrid
-$(".emailButton").click(function () {
+$(".emailButton").click(function getEmail() {
     const email = {
-        to: 'christopher.aa.merritt@gmail.com',
-        from: $("#emailFrom"),
-        subject: $("#emailSubject"),
-        text: $("#emailText"),
+        to: PERSONAL_EMAIL,
+        from: PERSONAL_EMAIL,
+        subject: $("#emailSubject").val(),
+        text: $("#emailText").val() + " from " + $("#emailFrom").val()
     };
     sendgrid.send(email)
         .then((response) => {
@@ -32,4 +32,5 @@ $(".emailButton").click(function () {
         .catch((error) => {
             console.error(error)
         })
+
 })
