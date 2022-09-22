@@ -11,9 +11,9 @@ function navFunction(){
     }
 }
 
-// get a instance of sendgrid and set the API key
+//code for sendgrid to send email for contact
 const sendgrid = require('@sendgrid/mail');
-sendgrid.setApiKey(SENDGRID_API_KEY);
+sendgrid.setApiKey(process.env.SENDGRID_API_KEY);
 // construct an email
 
 // send the email via sendgrid
@@ -25,4 +25,11 @@ $(".emailButton").click(function () {
         text: $("#emailText"),
     };
     sendgrid.send(email)
+        .then((response) => {
+            console.log(response[0].statusCode)
+            console.log(response[0].headers)
+        })
+        .catch((error) => {
+            console.error(error)
+        })
 })
