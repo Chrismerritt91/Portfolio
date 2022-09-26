@@ -12,30 +12,29 @@ function navFunction(){
         navbar.classList.remove("sticky")
     }
 }
-
-//code for sendgrid to send email for contact
-const sendgrid = require('@sendgrid/mail');
-sendgrid.setApiKey(process.env.SENDGRID_API_KEY);
-// construct an email
-
-// send the email via sendgrid
-$(".emailButton").click(function getEmail() {
-    const email = {
-        to: PERSONAL_EMAIL,
-        from: PERSONAL_EMAIL,
-        subject: $("#emailSubject").val(),
-        text: $("#emailText").val() + " from " + $("#emailFrom").val()
-    };
-    sendgrid.send(email)
-        .then((response) => {
-            console.log(response[0].statusCode)
-            console.log(response[0].headers)
-        })
-        .catch((error) => {
-            console.error(error)
-        })
-
-})
+// //code for sendgrid to send email for contact
+// const sendgrid = require('@sendgrid/mail');
+// sendgrid.setApiKey(process.env);
+// // construct an email
+//
+// // send the email via sendgrid
+// $(".emailButton").click(function getEmail() {
+//     const email = {
+//         to: PERSONAL_EMAIL,
+//         from: PERSONAL_EMAIL,
+//         subject: $("#emailSubject").val(),
+//         text: $("#emailText").val() + " from " + $("#emailFrom").val()
+//     };
+//     sendgrid.send(email)
+//         .then((response) => {
+//             console.log(response[0].statusCode)
+//             console.log(response[0].headers)
+//         })
+//         .catch((error) => {
+//             console.error(error)
+//         })
+//
+// })
 
 }).call(this)}).call(this,require('_process'))
 },{"@sendgrid/mail":28,"_process":67}],2:[function(require,module,exports){

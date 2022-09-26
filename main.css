@@ -141,3 +141,8 @@ body{
 .fa-brands{
     color: gray;
 }
+
+.fa-chevron-up{
+    color: lightgray;
+    background: linear-gradient(45deg, black, gray);
+}
