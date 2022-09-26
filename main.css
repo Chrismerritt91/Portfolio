@@ -114,6 +114,10 @@ body{
     color: #FE8802;
     text-align: center;
     padding-top: 5px;
+    transition: color;
+}
+.project-title:hover{
+    color: darkolivegreen;
 }
 
 .dev-image{
